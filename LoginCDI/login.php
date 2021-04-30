@@ -1,4 +1,6 @@
 <?php 
+
+// CHECK LA SESSION EN FONCTION DE l'ID UNIQUE DANS LA BDD. Si c'est good, on renvoie sur l'index
   session_start();
   if(isset($_SESSION['unique_id'])){
     header("location: registrecdi/index.php");
